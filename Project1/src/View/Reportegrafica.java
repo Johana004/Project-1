@@ -30,6 +30,7 @@ public class Reportegrafica extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
         this.cbxNacents();
         this.cbxSampling();
     }
