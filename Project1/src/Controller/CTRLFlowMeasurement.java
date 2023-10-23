@@ -76,10 +76,10 @@ public class CTRLFlowMeasurement {
         }
     }
 
-    public int capacidadRAMAleatoria(int minCapacidad, int maxCapacidad) {
+    public int capacidadRandom(int minCapacidad, int maxCapacidad) {
         Random rand = new Random();
-        int capacidadRAM = rand.nextInt(maxCapacidad - minCapacidad + 1) + minCapacidad;
-        return capacidadRAM;
+        int capacidad = rand.nextInt(maxCapacidad - minCapacidad + 1) + minCapacidad;
+        return capacidad;
     }
 
     public LocalDate fechaAleatoria2022() {
@@ -92,12 +92,12 @@ public class CTRLFlowMeasurement {
     }
 
     public void addFlowMeasurement(JTextField method, JTextField observation, JComboBox weather, JComboBox done) {
-        LocalDate localDate = fechaAleatoria2022(); // Obtén la fecha aleatoria como LocalDate
-        Date utilDate = Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant()); // Convierte LocalDate a java.util.Date
-        java.sql.Date Date = new java.sql.Date(utilDate.getTime()); // Convierte java.util.Date a java.sql.Date
-        int minCapacidadRAM = 0; // Capacidad RAM mínima en GB
-        int maxCapacidadRAM = 1000; // Capacidad RAM máxima en GB
-        int capacidad = capacidadRAMAleatoria(minCapacidadRAM, maxCapacidadRAM); // Genera capacidad RAM aleatoria
+        LocalDate localDate = fechaAleatoria2022(); 
+        Date utilDate = Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant()); 
+        java.sql.Date Date = new java.sql.Date(utilDate.getTime()); 
+        int minCapacidad = 0; 
+        int maxCapacidad = 1000; 
+        int capacidad = capacidadRandom(minCapacidad, maxCapacidad); 
         String Weather = (String) weather.getSelectedItem();
         String Done = (String) done.getSelectedItem();
         

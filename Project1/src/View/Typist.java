@@ -12,7 +12,7 @@ public class Typist extends javax.swing.JFrame {
     private int userId;
 
     public Typist(int userId) {
-       /* initComponents();
+        initComponents();
         this.setLocationRelativeTo(null);
         this.userId = userId;;
         this.listUser();
@@ -21,10 +21,10 @@ public class Typist extends javax.swing.JFrame {
         this.cbxEntity();
         this.cbxsNascent();
         this.cbxSampling();
-        this.clear(); */
+        this.clear(); 
     }
 
-  /*  private void listUser() {
+    private void listUser() {
         this.CU.loadDataUserDigitador(tblUserDigitador, userId);
     }
     private void listFlow(){    
@@ -382,7 +382,7 @@ public class Typist extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.CF.getIdSampling(cbxSites);
     }//GEN-LAST:event_cbxSitesItemStateChanged
-*/
+
    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddFlow;

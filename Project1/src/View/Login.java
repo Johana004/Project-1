@@ -117,7 +117,7 @@ public class Login extends javax.swing.JFrame {
                 int roleId = user.getRole_id();
                 if (roleId == 1) {
                     // Open the Digitador interface
-                   /* SuperAdministrator SAdm = new SuperAdministrator();
+                    SuperAdministrator SAdm = new SuperAdministrator();
                     SAdm.setVisible(true);
                     this.dispose();
                 } else if (roleId == 2) {
@@ -125,7 +125,7 @@ public class Login extends javax.swing.JFrame {
                     int entity_id = user.getEntity_id();
                     Administrator adm = new Administrator(entity_id);
                     adm.setVisible(true);
-                    /* int entity_id = user.getEntity_id(); // Supongamos que entity_id está disponible
+                    /*int entity_id = user.getEntity_id(); // Supongamos que entity_id está disponible
                      // Reemplaza TuClase con el nombre de la clase que contiene loadDataUserAdmin
                     this.CU.loadDataUserAdmin(tblUsers, entity_id);*/
                     this.dispose();
