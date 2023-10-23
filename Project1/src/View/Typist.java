@@ -21,7 +21,7 @@ public class Typist extends javax.swing.JFrame {
         this.cbxEntity();
         this.cbxsNascent();
         this.cbxSampling();
-        this.clear(); 
+        this.clear();
     }
 
     private void listUser() {
@@ -176,6 +176,7 @@ public class Typist extends javax.swing.JFrame {
         });
         jPanel2.add(cbxRoleUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 350, 60));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\chava\\OneDrive\\Escritorio\\Imagenes\\FondoUserDIGI.jpg")); // NOI18N
         jLabel1.setText("jLabel1");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1230, 560));
 
